@@ -71,7 +71,6 @@ func part_02(input string) int {
 }
 
 func main() {
-	fmt.Println("hello world")
 	input := aoc.OpenFile("input.txt")
 
 	part_01(input)
