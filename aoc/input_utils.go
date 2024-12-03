@@ -1,6 +1,7 @@
 package aoc
 
 import (
+	"regexp"
 	"strconv"
 	"strings"
 )
@@ -28,4 +29,12 @@ func StringToInt(elem string) int {
 		panic(err)
 	}
 	return intElem
+}
+
+func CompileRegex(req string) *regexp.Regexp {
+	r, err := regexp.Compile(req)
+	if err != nil {
+		panic(err)
+	}
+	return r
 }
