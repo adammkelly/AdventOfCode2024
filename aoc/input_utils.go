@@ -31,6 +31,10 @@ func StringToInt(elem string) int {
 	return intElem
 }
 
+func IntToString(elem int) string {
+	return strconv.Itoa(elem)
+}
+
 func CompileRegex(req string) *regexp.Regexp {
 	r, err := regexp.Compile(req)
 	if err != nil {

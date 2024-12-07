@@ -1,3 +1,3 @@
 module github.com/adammkelly/AdventOfCode2024
 
-go 1.16
+go 1.23
